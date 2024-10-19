@@ -1,0 +1,26 @@
+.header {
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navigation-links {
+      display: none;
+      @media screen and (min-width: 992px) {
+        display: block;
+      }
+      a {
+        &:not(:first-child) {
+          margin: 0 0 0 50px;
+        }
+      }
+      button {
+        margin: 0 0 0 50px;
+      }
+    }
+    & > button {
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}

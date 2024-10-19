@@ -1,0 +1,12 @@
+.interia-button {
+  border-radius: 9999px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--foreground);
+  &.variant-small {
+    padding: 0.3125rem;
+  }
+  &.variant-large {
+    padding: 0.3125rem 2rem;
+  }
+}
