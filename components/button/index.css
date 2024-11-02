@@ -3,6 +3,7 @@
   background: transparent;
   border: 1px solid var(--border-color);
   color: var(--foreground);
+  cursor: pointer;
   &.variant-small {
     padding: 0.3125rem;
   }

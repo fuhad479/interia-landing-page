@@ -1,0 +1,100 @@
+.about-us {
+  padding: 50px 0;
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+  .section-title {
+    margin: 0 0 75px;
+    h2 {
+      margin: 0 0 10px;
+    }
+  }
+  .interia-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (min-width: 576px) {
+      flex-direction: row;
+    }
+    .gallery {
+      width: 100%;
+      height: 440px;
+      .overview {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 40px;
+        @media screen and (min-width: 992px) {
+          display: none;
+        }
+        .counting {
+          font-size: 2.5rem;
+          font-family: "Kanit", sans-serif;
+          text-transform: uppercase;
+          color: var(--border-color);
+          margin: 0 0 0.625rem;
+        }
+      }
+      @media screen and (max-width: 992px) {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4) 30%,
+            rgba(0, 0, 0, 0.8) 70%
+          );
+        }
+      }
+      @media screen and (min-width: 992px) {
+        width: 240px;
+      }
+      &:nth-child(1) {
+        background: url("/gallery-one.jpg") no-repeat center / cover;
+      }
+      &:nth-child(2) {
+        background: url("/gallery-two.jpg") no-repeat center / cover;
+      }
+      &:nth-child(3) {
+        background: url("/gallery-three.jpg") no-repeat center / cover;
+        @media screen and (min-width: 992px) {
+          height: 240px;
+          border-radius: 0 50px 0 0;
+        }
+      }
+    }
+  }
+  .overviews {
+    display: none;
+    @media screen and (min-width: 992px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(100% - 640px);
+      position: absolute;
+      right: 100px;
+      bottom: 52px;
+    }
+    .overview {
+      .counting {
+        font-size: 2.5rem;
+        font-family: "Kanit", sans-serif;
+        text-transform: uppercase;
+        color: var(--border-color);
+      }
+    }
+  }
+  .about-us-action {
+    display: none;
+    @media screen and (min-width: 992px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 200px;
+    }
+  }
+}

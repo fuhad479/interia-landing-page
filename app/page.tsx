@@ -1,5 +1,13 @@
+import { Fragment } from "react";
+
 import Introduction from "@/app/components/introduction";
+import AboutUs from "./components/about-us";
 
 export default function Page() {
-  return <Introduction />;
+  return (
+    <Fragment>
+      <Introduction />
+      <AboutUs />
+    </Fragment>
+  );
 }
