@@ -1,0 +1,38 @@
+.hire-now-wrapper {
+  .hire-now {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px 10px 0;
+    padding: 2.5rem;
+    overflow: hidden;
+    position: relative;
+    background: var(--background-light);
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+      padding: 4.375rem;
+      border-radius: 50px 50px 0;
+    }
+    .image {
+      @media screen and (min-width: 992px) {
+        width: 435px;
+        height: 435px;
+      }
+      border-radius: 100%;
+      background: url("/introduction-background.jpg") no-repeat center / cover;
+      position: absolute;
+      left: -70px;
+    }
+    .content {
+      text-align: center;
+      @media screen and (min-width: 992px) {
+        text-align: initial;
+        width: calc(100% - 435px + 70px);
+        margin: 0 0 0 calc(435px - 70px);
+      }
+      h2 {
+        margin: 0 0 2rem;
+      }
+    }
+  }
+}
