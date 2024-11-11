@@ -1,0 +1,44 @@
+.teams-wrapper {
+  margin: -159px 0 0;
+  padding: 259px 0;
+  background: var(--background-dark);
+  .teams {
+    display: flex;
+    .teams-content,
+    .teams-gallery {
+      width: 100%;
+    }
+    .teams-content {
+      h2 {
+        margin: 0 0 25px;
+      }
+      .avatars {
+        display: flex;;
+        .avatar {
+          width: 55px;
+          height: 55px;
+          background: #ffffff;
+          border-radius: 100%;
+          outline: 3px solid var(--background-dark);
+          &:not(:first-child) {
+            margin: 0 0 0 -20px;
+          }
+        }
+      }
+      .stars {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .teams-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .gallery {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
