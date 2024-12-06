@@ -1,0 +1,8 @@
+.section-title {
+  span {
+    color: var(--border-color);
+  }
+  h1 {
+    margin: 0 0 10px;
+  }
+}

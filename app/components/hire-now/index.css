@@ -19,7 +19,8 @@
         height: 435px;
       }
       border-radius: 100%;
-      background: url("/introduction-background.jpg") no-repeat center / cover;
+      /* background: url("/introduction-background.jpg") no-repeat center / cover; */
+      background: var(--foreground);
       position: absolute;
       left: -70px;
     }

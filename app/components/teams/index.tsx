@@ -1,12 +1,13 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Button from "@/components/button";
 
-import galleryOne from "@/public/gallery-one.jpg";
-import galleryTwo from "@/public/gallery-two.jpg";
-import galleryThree from "@/public/gallery-three.jpg";
+// import galleryOne from "@/public/gallery-one.jpg";
+// import galleryTwo from "@/public/gallery-two.jpg";
+// import galleryThree from "@/public/gallery-three.jpg";
 
 import "./index.css";
 import { kanit } from "@/app/fonts";
+import SectionTitle from "@/components/section-title";
 
 export default function Teams() {
   return (
@@ -14,14 +15,11 @@ export default function Teams() {
       <div className="container">
         <div className="teams">
           <div className="teams-content">
-            <h2 className="">
-              Projects are handled by professional certified teams
-            </h2>
-            <p>
-              Posuere urna nec tincidunt praesent egestas maecenas pharetra
-              convallis posuere ipsum nunc aliquet bibendum enim consectetur
-              adipiscing.
-            </p>
+            <SectionTitle
+              subtitle="Teams"
+              title="Projects are handled by professional certified teams"
+              description="Posuere urna nec tincidunt praesent egestas maecenas pharetra convallis posuere ipsum nunc aliquet bibendum enim consectetur adipiscing."
+            />
             <div className="avatars">
               <div className="avatar"></div>
               <div className="avatar"></div>
@@ -43,20 +41,20 @@ export default function Teams() {
               ))}
               <span>(5 reviews)</span>
             </div>
-            <div className={`${kanit} kanit`}>Trusted by customer</div>
+            <div className={`${kanit} kanit subtitle`}>Trusted by customer</div>
           </div>
           <div className="teams-gallery">
             <div className="gallery">
-              <Image src={galleryOne} alt="Team gallery one" />
+              {/* <Image src={galleryOne} alt="Team gallery one" /> */}
             </div>
             <div className="gallery">
-              <Image src={galleryTwo} alt="Team gallery one" />
+              {/* <Image src={galleryTwo} alt="Team gallery one" /> */}
             </div>
             <div className="gallery">
               <Button>Learn Teams</Button>
             </div>
             <div className="gallery">
-              <Image src={galleryThree} alt="Team gallery one" />
+              {/* <Image src={galleryThree} alt="Team gallery one" /> */}
             </div>
           </div>
         </div>

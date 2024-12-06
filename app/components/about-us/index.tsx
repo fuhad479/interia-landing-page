@@ -1,6 +1,7 @@
 import { kanit } from "@/app/fonts";
 
 import Button from "@/components/button";
+import SectionTitle from "@/components/section-title";
 
 import "./index.css";
 
@@ -8,15 +9,11 @@ export default function AboutUs() {
   return (
     <section className="about-us">
       <div className="container">
-        <div className="section-title">
-          <span className="subtitle">About</span>
-          <h2>We are the best interior design studio in london</h2>
-          <p>
-            Posuere urna nec tincidunt praesent. Egestas maecenas pharetra
-            convallis posuere. Ipsum nunc aliquet bibendum enim. Sem integer
-            vitae justo eget magna fermentum iaculis eu non.
-          </p>
-        </div>
+        <SectionTitle
+          subtitle="About"
+          title="We are the best interior design studio in london"
+          description="Posuere urna nec tincidunt praesent. Egestas maecenas pharetra convallis posuere. Ipsum nunc aliquet bibendum enim. Sem integer vitae justo eget magna fermentum iaculis eu non."
+        />
         <div className="interia-gallery">
           <div className="gallery">
             <div className="overview">
