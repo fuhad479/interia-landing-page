@@ -4,6 +4,7 @@ import Introduction from "@/app/components/introduction";
 import AboutUs from "@/app/components/about-us";
 import HireNow from '@/app/components/hire-now';
 import Teams from "@/app/components/teams";
+import Gallery from "./components/gallery";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <AboutUs />
       <HireNow />
       <Teams />
+      <Gallery />
     </Fragment>
   );
 }
