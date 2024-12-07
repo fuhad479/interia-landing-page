@@ -1,13 +1,14 @@
-// import Image from "next/image";
+import { kanit } from "@/app/fonts";
+
+import Image from "next/image";
 import Button from "@/components/button";
+import SectionTitle from "@/components/section-title";
 
 // import galleryOne from "@/public/gallery-one.jpg";
 // import galleryTwo from "@/public/gallery-two.jpg";
 // import galleryThree from "@/public/gallery-three.jpg";
 
 import "./index.css";
-import { kanit } from "@/app/fonts";
-import SectionTitle from "@/components/section-title";
 
 export default function Teams() {
   return (
@@ -56,6 +57,20 @@ export default function Teams() {
             <div className="gallery">
               {/* <Image src={galleryThree} alt="Team gallery one" /> */}
             </div>
+          </div>
+        </div>
+        <div className="brands">
+          <div className="brand">
+            <Image src="" alt="Brand" width={255} height={98} />
+          </div>
+          <div className="brand">
+            <Image src="" alt="Brand" width={255} height={98} />
+          </div>
+          <div className="brand">
+            <Image src="" alt="Brand" width={255} height={98} />
+          </div>
+          <div className="brand">
+            <Image src="" alt="Brand" width={255} height={98} />
           </div>
         </div>
       </div>
