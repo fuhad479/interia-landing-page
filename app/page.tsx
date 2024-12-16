@@ -4,8 +4,9 @@ import Introduction from "@/app/components/introduction";
 import AboutUs from "@/app/components/about-us";
 import HireNow from '@/app/components/hire-now';
 import Teams from "@/app/components/teams";
-import Gallery from "./components/gallery";
-import Articles from "./components/articles";
+import Gallery from "@/app/components/gallery";
+import Articles from "@/app/components/articles";
+import Newsletter from "@/app/components/newsletter";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <Teams />
       <Gallery />
       <Articles />
+      <Newsletter />
     </Fragment>
   );
 }
